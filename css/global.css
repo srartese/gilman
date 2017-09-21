@@ -1,0 +1,160 @@
+/*
+Gilman Site
+Sara Artese
+*/
+
+/*+++++RESET+++++*/
+html,body,div,h1,h2,h3,h4,h5,h6,ul,li,p
+{		margin:0; padding:0;}
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('quicksand-regular-webfont.eot');
+    src: url('quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('quicksand-regular-webfont.ttf') format('truetype'),
+         url('quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*+++++BODY+++++*/
+body{  width: 100%; margin: 0px; font-family: 'quicksandregular'; font-size: 1.2em}
+p { line-height: 30px; margin-bottom: 10px;} 
+h4 { margin: 10px;}
+
+.container-fluid {font-family: 'quicksandregular';
+}
+/*+++++UTILITY+++++*/
+.clear{	clear:both;}
+
+a:link,a:visited {		color: #3b3b3b; text-decoration: none;}
+a:active,a:hover,a:focus {		color: #FFF; }
+a:active {		bottom: -1px; position:relative; }
+
+
+em {	font-style:italic;}
+strong {	font-weight:bold;}
+abbr {		border-bottom: 1px dotted #535353; cursor:help; font-style:italic;}
+
+
+/*+++++ NAVIGATION +++++*/ 
+/*535d6a;*/
+section {height: 80px; background-color: rgba(0,66,82,.001); position:fixed; width:100%;}
+nav { float:right; width: auto; height: 60px; right: 0; top: 10px; z-index: 1; padding-right: 20px; position:fixed;}
+#navigation {	float: right; color: #FFF; margin-top: 25px;}
+#navigation li { list-style-type: none; display: inline; margin: 10px;}
+
+#navigation li a:link, #navigation li a:visited  {	color:#FFF; }
+#navigation li a:hover { color: rgb(0,127,159);}
+#navigation li a:active, #navigation li a:focus, #navigaiton li a.active {  color: #FFF; border-bottom: white 1px solid;  }
+#navigation li .active { border-bottom: white 1px solid; }
+/*004252*/
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+
+/*+++++ HEADER +++++*/
+.header {	height: 350px; max-height: 500px; width: 100%; background-image: url("../media/main.png"); background-size: cover; background-attachment: fixed; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; overflow: hidden;}
+.header3	{	height: 250px; max-height: 600px; width: 100%; background-image: url("../media/ablog3.jpg") ; background-size: cover; background-attachment: fixed; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; overflow: hidden; background-position-y: 600px; }
+
+.htext h1, .htext h2 { color: white;}
+
+#mainimg {	height: auto; width: 100%; margin:0px;  z-index: -1; overflow:hidden; position: absolute; }
+#logo {		margin-top: 10px; margin-left: 20px; }
+
+h1, h2 { color: white; }
+h1	{	width: auto; height: auto; margin-left: 40%; margin-top: 12%; }
+h2	{ width: auto; height: auto; margin-left: 40%;}
+
+/*++++ CONTENT +++++*/
+.content {	height: 100%;  max-height: 4000px; min-height: 500px; width: 85%;  margin:0 auto; text-align: justify; padding-top: 20px; padding-bottom: 5px; color: #2b2b2b; position: relative; top: auto; z-index: -999; line-height: 1.5em;}
+h3 {	height: auto; width: auto; margin: 0px auto 0 auto; padding-bottom: 20px; text-align: center; font-size: 1.6em; padding-top: 60px; font-weight: bold;}
+	/*++ Home Page ++*/	
+p.about {	width: 70%; height: auto; margin: 0 auto 20px auto; line-height: 30px; padding-bottom: 20px;  }
+.allabout {  background-color: #fff; text-align: justify; padding-top: 25px; }
+
+h4 {padding-top: 30px; padding-bottom: 15px;}
+h4 a:hover {color: rgb(0,127,159);}
+h4 a:visited {color: black;}
+
+.stuff a:visited, a:hover { color: black;}
+#gil {	width:225px; height:auto; padding-top:10px;}
+#imageGil { padding-top:10px; margin: 0 auto;text-align: center;}
+/*++ BLOG ++*/
+.post {margin-bottom: 30px;}
+.postimage { height:380px; width: 100vw; overflow: hidden; background-size: cover; background-attachment: fixed; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease;  background-position-y: 20vh; background-repeat: no-repeat; }
+.ch17 {background-image: url("../media/last.jpg");}
+.ch16 {background-image: url("../media/winter.jpg");}
+.ch15 {background-image: url("../media/more.jpg");}
+.ch14 {background-image: url("../media/krka.jpg");}
+.ch13 {background-image: url("../media/rome.jpg");}
+.ch12 {background-image: url("../media/mall.jpg");}
+.ch11 {background-image: url("../media/orch.jpg");}
+.ch10 {background-image: url("../media/bosnia.jpg");}
+.ch9 {background-image: url("../media/night.jpg");}
+.ch8 {background-image: url("../media/monte.jpg"); }
+.ch7 {background-image: url("../media/explore.jpg"); }
+.ch6 {background-image: url("../media/exphome.jpg"); }
+.ch5 {background-image: url("../media/ritc.jpg"); }
+.ch4 {background-image: url("../media/dubrovnik.jpg"); }
+.ch3 {background-image: url("../media/amsterdam.jpg"); }
+.ch2 {background-image: url("../media/london.jpg"); }
+.ch1 {background-image: url("../media/ireland.jpg"); }
+
+/*
+	 background-size: cover; background-attachment: fixed; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease;  background-position-y: 600px; 
+	*/
+h4 { text-align: center; padding-top: 0px; margin-top: -10px; font-size: 90%; font-style: italic;}
+.postcontent {width: 85%; margin: 0 auto; text-align: justify;}
+.post ul {width: 90%; margin: 0 auto; text-align: justify; padding-left: 50px; line-height: 1.5em;}
+.listpnt { padding-top: 30px; width: 85%; margin: 0 auto; text-align: justify;}
+h4.startch1 {font-style: oblique; padding-bottom: 10px; margin-top: 25px; opacity: .3;}
+h4.startch1 a:hover {opacity: 1; color: rgb(0,127,159);}
+footer {margin: 0 auto; text-align: center; color:#00ce9f;}
+.videoArea { height:auto; width:100%; margin: 0 auto; text-align: center; margin-top: 15px;}
+/* Media Queries*/ 
+@media screen and (max-width: 750px) {
+		p { text-align: center !important; font-size: 100%;}
+		h1, h2 {	margin-left: 20%; font-size: 100%; margin-top: 15%;}
+		.descrips p { padding-bottom: 20px;}
+		#soft, #avail { display: block; margin: 0 auto 0 auto;  clear: both; width: 100%; } 
+		#lang, #info {margin: 0;  margin: 0 auto 0 auto; width: 100%; padding-bottom: 20px;}
+		.res img { height: auto; width: 300px;}
+		.res { width: 100%; }
+		.stuff{ width: 100%; line-height: 30px; margin: 10px; }
+		#indivprocon { width: 100%;}
+		.procon img {width: 75%;}
+		.pind { width: 90%; margin: 10px; }
+		.exhov1 {display: none;}
+		.exhov1me {display: block; }
+		.exhov2 {display: none;}
+		.exhov2me {display: block; }
+		.exhov3 {display: none;}
+		.exhov3me {display: block; }
+		.exhov4 {display: none;}
+		.exhov4me {display: block; }
+		.exhov5 {display: none;}
+		.exhov5me {display: block; }
+		.exhov6 {display: none;}
+		.exhov6me {display: block; }
+		h1	{	width: auto; height: auto; margin-left: 20%; margin-top: 50%; font-size: 1.5em;}
+		h2	{ width: auto; height: auto; margin-left: 20%;font-size: 1.3em;}		
+		.procon {padding: 0;}
+	}	
+
+	
+	@media screen and (min-width: 750px) {	
+		.exhov1 {display: block;}
+		.exhov1me {display: none; }
+		.exhov2 {display: block;}
+		.exhov2me {display: none; }
+		.exhov3 {display: block;}
+		.exhov3me {display: none; }
+		.exhov4 {display: block;}
+		.exhov4me {display: none; }
+		.exhov5 {display: block;}
+		.exhov5me {display: none; }
+		.exhov6 {display: block;}
+		.exhov6me {display: none; }
+}
